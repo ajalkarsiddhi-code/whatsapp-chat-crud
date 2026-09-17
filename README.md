@@ -26,38 +26,38 @@ A simple WhatsApp-style chat application built using Express.js, MongoDB, Mongoo
 
 Clone the repository:
 
-bash
+```bash
 git clone https://github.com/ajalkarsiddhi-code/whatsapp-chat-crud.git
-
+```
 
 Install dependencies:
 
-bash
+```bash
 npm install
-
+```
 
 Run the application:
 
-bash
+```bash
 node index.js
-
+```
 
 Open:
 
-
+```
 http://localhost:8080/chats
-
+```
 
 ## Project Structure
 
-
+```
 models/
 public/
 views/
 index.js
 init.js
 package.json
-
+```
 
 ## Author
 
