@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f8;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.newBtn{
+    display:inline-block;
+    padding:12px 20px;
+    text-decoration:none;
+    background:#25D366;
+    color:white;
+    border-radius:8px;
+    margin-bottom:20px;
+}
+
+.chat-card{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.chat-card:hover{
+    transform:translateY(-3px);
+}
+
+.header{
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.from{
+    color:#0d6efd;
+}
+
+.to{
+    color:#198754;
+}
+
+.message{
+    background:#dcf8c6;
+    padding:15px;
+    border-radius:10px;
+    margin-top:10px;
+    font-size:18px;
+}
+
+.date{
+    margin-top:15px;
+    color:gray;
+    font-size:14px;
+}
+
+.form-container{
+    width:500px;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#25D366;
+    border:none;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.top-section{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:10px;
+}
+
+.actions{
+    display:flex;
+    gap:10px;
+}
+
+.actions form{
+    margin:0;
+}
+
+.editBtn{
+    text-decoration:none;
+    background:#0d6efd;
+    color:white;
+    padding:8px 14px;
+    border-radius:8px;
+    font-weight:600;
+}
+
+.deleteBtn{
+    background:#dc3545;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:600;
+}

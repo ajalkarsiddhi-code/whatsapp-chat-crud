@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Chat</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="form-container">
+
+    <h1>Edit Chat</h1>
+
+    <form action="/chats/<%= chat._id %>?_method=PATCH" method="POST">
+
+        <input
+            type="text"
+            value="<%= chat.from %>"
+            readonly
+        >
+
+        <input
+            type="text"
+            value="<%= chat.to %>"
+            readonly
+        >
+
+        <textarea
+            name="msg"
+            rows="5"
+        ><%= chat.msg %></textarea>
+
+        <button>
+            Update Chat
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

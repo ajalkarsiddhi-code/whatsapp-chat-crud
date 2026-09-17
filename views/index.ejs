@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Chats</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>💬 WhatsApp Chats</h1>
+
+    <a href="/chats/new" class="newBtn">
+        + New Chat
+    </a>
+
+    <% for(let chat of chats){ %>
+
+        <div class="chat-card">
+
+            <div class="top-section">
+
+    <div class="header">
+        <span class="from">
+            <%= chat.from %>
+        </span>
+
+        ➜
+
+        <span class="to">
+            <%= chat.to %>
+        </span>
+    </div>
+
+    <div class="actions">
+
+        <a href="/chats/<%= chat._id %>/edit" class="editBtn">
+            ✏️ Edit
+        </a>
+
+       <form
+    action="/chats/<%= chat._id %>?_method=DELETE"
+    method="POST"
+    onsubmit="return confirmDelete()"
+>
+    <button type="submit" class="deleteBtn">
+        🗑️ Delete
+    </button>
+</form>
+
+    </div>
+
+</div>
+
+<div class="message">
+    <%= chat.msg %>
+</div>
+
+<div class="date">
+    <%= chat.created_at.toLocaleString() %>
+</div>
+
+        </div>
+
+    <% } %>
+
+</div>
+<script>
+    function confirmDelete() {
+        return confirm("Are you sure you want to delete this chat?");
+    }
+</script>
+</body>
+</html>
